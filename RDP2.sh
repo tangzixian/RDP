@@ -1,4 +1,5 @@
 #! /bin/bash
+printf 'YT Channel - https://www.youtube.com/c/AKYTRC \n'
 printf "RDP installing... " >&2
 {
 sudo useradd -m ALOK
@@ -27,4 +28,3 @@ printf '\nGO to https://remotedesktop.google.com/headless  Copy Command Of Debia
 read -p "Paste Here: " CRP
 su - ALOK -c """$CRP"""
 printf 'Your SUDO Password Is 1234 \n'
-printf 'YT Channel - https://www.youtube.com/c/AKYTRC \n'
