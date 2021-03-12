@@ -21,9 +21,8 @@ wget https://media.codeweavers.com/pub/crossover/cxlinux/demo/crossover_20.0.2-1
 sudo dpkg -i crossover_20.0.2-1.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
-sudo apt -y install obs-studio
-sudo apt -y install firefox
-sudo adduser aunglay chrome-remote-desktop
+sudo apt install obs-studio -y
+sudo adduser ALOK chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Completed " >&2 ||
 printf "\nError Occured " >&2
