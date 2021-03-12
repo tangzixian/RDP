@@ -4,7 +4,7 @@ printf "RDP installing... " >&2
 {
 sudo useradd -m ALOK
 sudo adduser ALOK sudo
-echo 'ALOK:8426' | sudo chpasswd
+echo 'ALOK:AKYTRC' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
@@ -31,4 +31,4 @@ printf '\nGO to https://remotedesktop.google.com/headless  Copy Command Of Debia
 read -p "Paste Here: " CRP
 su - ALOK -c """$CRP"""
 printf 'Access here https://remotedesktop.google.com/access/ \n'
-printf 'Your SUDO Password Is 8426 \n'
+printf 'Your SUDO Password Is AKYTRC \n'
