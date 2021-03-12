@@ -1,4 +1,5 @@
 #! /bin/bash
+printf 'YT Channel - https://www.youtube.com/c/AKYTRC \n'
 printf "RDP installing... " >&2
 {
 sudo useradd -m ALOK
@@ -31,4 +32,3 @@ read -p "Paste Here: " CRP
 su - ALOK -c """$CRP"""
 printf 'Access here https://remotedesktop.google.com/access/ \n'
 printf 'Your SUDO Password Is 8426 \n'
-printf 'YT Channel - https://www.youtube.com/c/AKYTRC \n'
