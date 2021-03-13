@@ -12,9 +12,8 @@ unzip ngrok-stable-linux-amd64.zip
 } &> /dev/null &&
 printf "\nSetup Completed\n " >&2 ||
 printf "\nError Occured\n " >&2
-vncpasswd
 tightvncserver :1
 clear
 printf '\nEnter the Authentication code\n\n'
-read -p "Paste Here:"
+read -p "Paste Here:\n"
 screen ./ngrok tcp 5901"
