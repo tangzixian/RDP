@@ -15,7 +15,4 @@ printf "\nError Occured " >&2
 tightvncserver :1
 clear
 printf '\nEnter the Authentication code\n'
-printf '\nscreen ./ngrok tcp 5901'\n
-./ngrok authtoken 1pfP5DsjgqQMqDMM3bCG0s41O8F_6Jt35YWVgTHxX1KLNqyC1
-screen ./ngrok tcp 5901"
-
+printf 'screen ./ngrok tcp 5901\n'
