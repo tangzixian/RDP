@@ -15,7 +15,6 @@ printf "\nError Occured\n " >&2
 tightvncserver :1
 printf '\nEnter the Authentication code\n'
 read -p "Paste Here:"
-screen
 printf "screen ./ngrok tcp 5901\n" >&2
 {
 sudo apt-get update
