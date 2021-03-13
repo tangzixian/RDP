@@ -17,4 +17,5 @@ clear
 printf '\nEnter the Authentication code\n\n'
 read -p "Paste Here:"
 printf '\nscreen ./ngrok tcp 5901\n'
-screen ./ngrok tcp 5901
+read -p "screen ./ngrok tcp 5901"
+
