@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       authcode:
-        description: 'Enter CRD code'
+        description: 'Enter CRD code https://remotedesktop.google.com/headless'
         required: true
       pincode:
         description: 'Six digit Pin'
