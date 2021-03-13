@@ -20,6 +20,8 @@ jobs:
       run: ./setup.ps1
     - name: Starting CRD
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
+    - name: Assign User
+      run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "AKYTRC" -Force)
     - name: Download Timeout Script
       run: Invoke-WebRequest https://raw.githubusercontent.com/rameshchatarji/Windows-CRD/main/timeout.ps1 -OutFile timeout.ps1
     - name: Keep Alive
