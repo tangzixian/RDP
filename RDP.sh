@@ -4,7 +4,7 @@ printf "RDP installing... " >&2
 {
 sudo useradd -m ALOK
 sudo adduser ALOK sudo
-echo 'ALOK:AKYTRC' | sudo chpasswd
+echo 'ALOK:8426' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
