@@ -10,10 +10,10 @@ sudo apt install tightvncserver
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip ngrok-stable-linux-amd64.zip
 } &> /dev/null &&
-printf "\nSetup Completed " >&2 ||
-printf "\nError Occured " >&2
+printf "\nSetup Completed\n " >&2 ||
+printf "\nError Occured\n " >&2
 tightvncserver :1
 printf '\nEnter the Authentication code\n'
 read -p "Paste Here:"
-clear
+screen
 screen ./ngrok tcp 5901
