@@ -1,5 +1,5 @@
 #! /bin/bash
-printf 'YT Channel - https://www.youtube.com/c/AKYTRC \n'
+printf 'YT Channel - https://youtu.be/VeO22kIvZOQ \n'
 printf "RDP installing... " >&2
 {
 sudo useradd -m ALOK
@@ -23,6 +23,10 @@ sudo dpkg -i crossover_20.0.2-1.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo apt install obs-studio -y
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+sudo apt update
+sudo apt install anydesk -y
 sudo adduser ALOK chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Completed " >&2 ||
