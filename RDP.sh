@@ -31,4 +31,4 @@ printf '\nGO to https://remotedesktop.google.com/headless  Copy Command Of Debia
 read -p "Paste Here: " CRP
 su - ALOK -c """$CRP"""
 printf 'Access here https://remotedesktop.google.com/access/ \n'
-printf 'Your SUDO Password Is AKYTRC \n'
+printf 'Your SUDO Password Is 8426 \n'
